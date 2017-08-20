@@ -29,7 +29,7 @@ class HomeController extends Controller
     {
         $articles = Article::all();
         $categories = Category::all();
-        return view('test',compact('categories','articles'));
+        return view('welcome',compact('categories','articles'));
     }
 
     public function single($id){

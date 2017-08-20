@@ -21,10 +21,10 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/single/{id}', 'HomeController@single');
-
+//admin
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function (){
    Route::get('/',['as'=>'admin.index','uses'=>'AdminController@index']);
-    //Category
+    //Category 
     Route::get('/category',['as'=>'admin.category','uses'=>'AdminController@category']);
    Route::get('/category/create',['as'=>'admin.category.create','uses'=>'CategoryController@create']);
    Route::get('/category/{id}/edit',['as'=>'admin.category.edit','uses'=>'CategoryController@edit']);

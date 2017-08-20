@@ -5,233 +5,153 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
-    <!-- Bootstrap Core CSS -->
-    <link href="/files/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <title>Document</title>
     <style>
-        .nav-side-menu {
-            overflow: auto;
-            font-family: verdana;
-            font-size: 12px;
-            font-weight: 200;
-            background-color: #2e353d;
-            position: fixed;
-            top: 0px;
-            width: 300px;
-            height: 100%;
-            color: #e1ffff;
-        }
-        .nav-side-menu .brand {
-            background-color: #23282e;
-            line-height: 50px;
-            display: block;
-            text-align: center;
-            font-size: 14px;
-        }
-        .nav-side-menu .toggle-btn {
-            display: none;
-        }
-        .nav-side-menu ul,
-        .nav-side-menu li {
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
-            line-height: 35px;
-            cursor: pointer;
-            /*
-              .collapsed{
-                 .arrow:before{
-                           font-family: FontAwesome;
-                           content: "\f053";
-                           display: inline-block;
-                           padding-left:10px;
-                           padding-right: 10px;
-                           vertical-align: middle;
-                           float:right;
-                      }
-               }
-          */
-        }
-        .nav-side-menu ul :not(collapsed) .arrow:before,
-        .nav-side-menu li :not(collapsed) .arrow:before {
-            font-family: FontAwesome;
-            content: "\f078";
-            display: inline-block;
-            padding-left: 10px;
-            padding-right: 10px;
-            vertical-align: middle;
-            float: right;
-        }
-        .nav-side-menu ul .active,
-        .nav-side-menu li .active {
-            border-left: 3px solid #d19b3d;
-            background-color: #4f5b69;
-        }
-        .nav-side-menu ul .sub-menu li.active,
-        .nav-side-menu li .sub-menu li.active {
-            color: #d19b3d;
-        }
-        .nav-side-menu ul .sub-menu li.active a,
-        .nav-side-menu li .sub-menu li.active a {
-            color: #d19b3d;
-        }
-        .nav-side-menu ul .sub-menu li,
-        .nav-side-menu li .sub-menu li {
-            background-color: #181c20;
-            border: none;
-            line-height: 28px;
-            border-bottom: 1px solid #23282e;
-            margin-left: 0px;
-        }
-        .nav-side-menu ul .sub-menu li:hover,
-        .nav-side-menu li .sub-menu li:hover {
-            background-color: #020203;
-        }
-        .nav-side-menu ul .sub-menu li:before,
-        .nav-side-menu li .sub-menu li:before {
-            font-family: FontAwesome;
-            content: "\f105";
-            display: inline-block;
-            padding-left: 10px;
-            padding-right: 10px;
-            vertical-align: middle;
-        }
-        .nav-side-menu li {
-            padding-left: 0px;
-            border-left: 3px solid #2e353d;
-            border-bottom: 1px solid #23282e;
-        }
-        .nav-side-menu li a {
-            text-decoration: none;
-            color: #e1ffff;
-        }
-        .nav-side-menu li a i {
-            padding-left: 10px;
-            width: 20px;
-            padding-right: 20px;
-        }
-        .nav-side-menu li:hover {
-            border-left: 3px solid #d19b3d;
-            background-color: #4f5b69;
-            -webkit-transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-            transition: all 1s ease;
-        }
-        @media (max-width: 767px) {
-            .nav-side-menu {
-                position: relative;
-                width: 100%;
-                margin-bottom: 10px;
+        @media(min-width: 768px){
+            .fixed{
+                position: fixed;
+                bottom: 19px;
+                max-width: 31.15%;
             }
-            .nav-side-menu .toggle-btn {
-                display: block;
-                cursor: pointer;
-                position: absolute;
-                right: 10px;
-                top: 10px;
-                z-index: 10 !important;
-                padding: 3px;
-                background-color: #ffffff;
-                color: #000;
-                width: 40px;
-                text-align: center;
+            .myimg{
+                width: 60%;
+                margin: 50px;
             }
-            .brand {
-                text-align: left !important;
-                font-size: 22px;
-                padding-left: 20px;
-                line-height: 50px !important;
+            #menu-r{
+                margin: 5% 10%;
             }
         }
-        @media (min-width: 767px) {
-            .nav-side-menu .menu-list .menu-content {
-                display: block;
+        @media(max-width: 767px){
+            .myimg{
+                width: 50%;
+            }
+            .col-xs-6{
+                padding: 10px 0 10px 40px;
+            }
+            .navbar-toggle{
+                margin-top: 15px;
+            }
+            .myimg {
+                width: 140px;
+            }
+            #bir{
+                padding-bottom: 20px;
             }
         }
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
-
     </style>
 </head>
-<body style="background: #d4d4d4">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-<div class="nav-side-menu">
-    <div class="brand">Brand Logo</div>
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-
-    <div class="menu-list">
-
-        <ul id="menu-content" class="menu-content collapse out">
-            <li>
-                <a href="#">
-                    <i class="fa fa-dashboard fa-lg"></i> Dashboard
-                </a>
-            </li>
-
-            <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu collapse" id="products">
-                <li class="active"><a href="#">CSS3 Animation</a></li>
-                <li><a href="#">General</a></li>
-                <li><a href="#">Buttons</a></li>
-                <li><a href="#">Tabs & Accordions</a></li>
-                <li><a href="#">Typography</a></li>
-                <li><a href="#">FontAwesome</a></li>
-                <li><a href="#">Slider</a></li>
-                <li><a href="#">Panels</a></li>
-                <li><a href="#">Widgets</a></li>
-                <li><a href="#">Bootstrap Model</a></li>
-            </ul>
-
-
-            <li data-toggle="collapse" data-target="#service" class="collapsed">
-                <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu collapse" id="service">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-            </ul>
-
-
-            <li data-toggle="collapse" data-target="#new" class="collapsed">
-                <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu collapse" id="new">
-                <li>New New 1</li>
-                <li>New New 2</li>
-                <li>New New 3</li>
-            </ul>
-
-
-            <li>
-                <a href="#">
-                    <i class="fa fa-user fa-lg"></i> Profile
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa fa-users fa-lg"></i> Users
-                </a>
-            </li>
-        </ul>
+<body style="margin-top: 20px">
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-4 col-sm-4" id="bir">
+            <nav class="nav navbar-default navbar-left"  style="width: 100%" id="nav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="nav col-md-12 col-sm-12 col-xs-6">
+                            <h1 style="font-size: 80px;">
+                                <a href="/home">
+                                    <img src="/image/logo1.png" id="img" class="img img-responsive myimg" style="height: auto">
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="navbar-header col-xs-6">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-r">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="collapse navbar-collapse" id="menu-r">
+                    <nav class="sidebar">
+                        <h4 style="margin: 5px;">НАШИ ПРОЕКТЫ:</h4><hr>
+                        <ul class="nav sidebar">
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Akirki</a></li>
+                        </ul>
+                        <hr>
+                        <h4 style="margin: 5px">ПОПУЛЯРНЫЕ ЗАПИСИ И СТРАНИЦЫ</h4><hr>
+                        <ul class="nav sidebar">
+                            <li>
+                                <img src="/bootstrap/images/2.jpg" class="img img-responsive" style="height: 50px">
+                                <a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Akirki</a></li>
+                        </ul>
+                        <hr>
+                        <h4 style="margin: 5px">НЕДАВНИЕ КОММЕНТАРИИ</h4><hr>
+                        <ul class="nav sidebar">
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Home</a></li>
+                            <li><a href="" class="hvr-underline-from-left" >Akirki</a></li>
+                        </ul>
+                        <hr>
+                        <h4 style="margin: 5px" >СОЦИАЛЬНЫЕ СЕТИ</h4><hr>
+                        <ul class="nav sidebar">
+                            <li class="block" style="margin: 10px">
+                                <div class="row">
+                                    <a href="" class="hvr-underline-from-left" >
+                                        <div class="col-md-5 col-sm-6 col-xs-5">
+                                            <img src="/bootstrap/images/2.jpg" class="img img-responsive">
+                                        </div>
+                                        <div class="col-md-7 col-sm-6 col-xs-7">
+                                            <span>Home</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <hr>
+                        <h4 style="margin: 5px">МЕНЮ</h4><hr>
+                        <ul class="nav sidebar" >
+                            <li><a href="" class="hvr-underline-from-left" >О нас</a></li>
+                        </ul>
+                    </nav>
+            </div>
+                    </div>
+                </div>
+            </nav>
     </div>
+    <div class="col-md-8 col-sm-8">
+        @foreach($articles as $category)
+        <div class="thumbnail" style="background-color: rgba(169, 169, 169, 0.08);padding: 30px">
+            <img src="/bootstrap/images/1.jpg" class="img img-responsive">
+            <div class="caption">
+            {!!  $category->content  !!}
+            </div>
+        </div>
+        @endforeach
 </div>
-<!-- jQuery -->
-<script src="/files/vendor/jquery/jquery.min.js"></script>
+</div>
+</div>
+<script src="/bootstrap/js/jquery-1.11.1.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(window).bind('scroll', function () {
+        var a = document.getElementById('nav');
 
-<!-- Bootstrap Core JavaScript -->
-<script src="/files/vendor/bootstrap/js/bootstrap.min.js"></script>
+        if ($(window).scrollTop() > a.clientHeight-650) {
+            $('#nav').addClass('fixed');
+        }
+        else {
+            $('#nav').removeClass('fixed');
+        }
+    });
+</script>
 </body>
 </html>
