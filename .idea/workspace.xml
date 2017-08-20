@@ -2,139 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3cc900-2101-4634-b052-3259a108d971" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/js/sb-admin-2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/files/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/froala_editor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/froala_editor.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/froala_editor.pkgd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/froala_editor.pkgd.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/froala_style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/froala_style.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/char_counter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/char_counter.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/code_view.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/code_view.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/colors.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/colors.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/draggable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/draggable.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/emoticons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/emoticons.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/file.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/file.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/fullscreen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/fullscreen.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/help.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/help.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/image.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/image.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/image_manager.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/image_manager.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/line_breaker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/line_breaker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/quick_insert.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/quick_insert.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/special_characters.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/special_characters.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/table.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/table.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/video.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/plugins/video.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/themes/dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/themes/dark.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/themes/gray.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/themes/gray.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/themes/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/themes/red.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/themes/royal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/themes/royal.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/third_party/spell_checker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/css/third_party/spell_checker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/froala_editor.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/froala_editor.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/bs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/en_ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/en_gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/me.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/pt_br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/pt_pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/zh_cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/languages/zh_tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/align.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/char_counter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/code_beautifier.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/code_view.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/colors.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/draggable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/emoticons.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/entities.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/file.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/font_family.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/font_size.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/forms.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/fullscreen.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/help.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/image.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/image_manager.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/inline_style.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/line_breaker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/link.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/lists.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/paragraph_format.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/paragraph_style.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/print.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/quick_insert.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/quote.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/save.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/special_characters.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/table.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/url.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/video.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/plugins/word_paste.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/third_party/image_aviary.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/froala/js/third_party/spell_checker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.phar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled1.iml" afterPath="$PROJECT_DIR$/.idea/untitled1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -595,15 +465,15 @@
       <workItem from="1503259983947" duration="303000" />
       <workItem from="1503260983223" duration="1481000" />
       <workItem from="1503266275607" duration="1023000" />
-      <workItem from="1503268256903" duration="3182000" />
+      <workItem from="1503268256903" duration="3621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90386000" />
+    <option name="totallyTimeSpent" value="90825000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -615,7 +485,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.50800914" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34640524" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33169934" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
