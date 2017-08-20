@@ -9,10 +9,10 @@
     @if (isset($article))
         <textarea class="form-control" name="content">{{ $article }}</textarea>
     @else
-        <textarea class="form-control" rows="20" name="text_option2"></textarea>
-        <script> CKEDITOR.replace('text_option2');</script>
-    @endif
+        <textarea class="form-control" rows="20" name="content"></textarea>
 
+    @endif
+    <script> CKEDITOR.replace('content');</script>
 <!-- Include external JS libs. -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 

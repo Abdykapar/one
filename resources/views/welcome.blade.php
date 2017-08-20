@@ -128,11 +128,11 @@
             </nav>
     </div>
     <div class="col-md-8 col-sm-8">
-        @foreach($articles as $category)
-        <div class="thumbnail" style="background-color: rgba(169, 169, 169, 0.08);padding: 30px">
-            <img src="/bootstrap/images/1.jpg" class="img img-responsive">
+        @foreach($articles as $article)
+        <div class="thumbnail" style="background-color: rgba(169, 169, 169, 0.08);padding: 40px">
+            <img src="/image/{{ $article->image }}" class="img img-responsive">
             <div class="caption">
-            {!!  $category->content  !!}
+            {!!  $article->content  !!}
             </div>
         </div>
         @endforeach
@@ -145,7 +145,7 @@
     $(window).bind('scroll', function () {
         var a = document.getElementById('nav');
 
-        if ($(window).scrollTop() > a.clientHeight-650) {
+        if ($(window).scrollTop() > a.clientHeight-600) {
             $('#nav').addClass('fixed');
         }
         else {

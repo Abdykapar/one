@@ -12,7 +12,7 @@
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/files/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- DataTables CSS -->
     <link href="/files/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
@@ -128,7 +128,7 @@
 
 
 <!-- Bootstrap Core JavaScript -->
-<script src="/files/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
 <!-- Include Editor style. -->
 
 <!-- Metis Menu Plugin JavaScript -->
