@@ -12,7 +12,7 @@
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/files/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- DataTables CSS -->
     <link href="/files/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
@@ -70,11 +70,7 @@
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                    </li>
-                    <li class="divider"></li>
+                    <li><a href="{{ route('admin.password') }}"><i class="fa fa-user fa-fw"></i> Change password</a></li>
                     <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
                 </ul>
@@ -128,7 +124,7 @@
 
 
 <!-- Bootstrap Core JavaScript -->
-<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/files/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!-- Include Editor style. -->
 
 <!-- Metis Menu Plugin JavaScript -->

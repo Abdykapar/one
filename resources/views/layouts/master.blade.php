@@ -1,29 +1,18 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Great Taste a Hotels and Restaurants Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
-    <!-- for-mobile-apps -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Great Taste Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- //for-mobile-apps -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="/bootstrap/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- js -->
-    <script src="/bootstrap/js/jquery-1.11.1.min.js"></script>
-    <!-- //js -->
+    <link href="/boot/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/boot/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/boot/js/jquery-1.11.1.min.js"></script>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
@@ -40,11 +29,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         .social{
             float: left;
         }
+        .content2{
+            display: flex;
+            flex: 1 1 auto;
+            margin: 10px;
+        }
+        .content1 {
+            display: flex;
+            flex: 2 1 auto;
+        }
     </style>
 </head>
-
 <body>
-<!-- banner-body -->
 <div class="banner-body">
     <div class="container">
         <div class="banner-body-content">
@@ -75,18 +71,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     @foreach($categories as $category)
                                         <li><a href="mail.html" class="hvr-underline-from-left">#{{ $category->name }}</a></li>
                                     @endforeach
-                                        @foreach($categories as $category)
-                                            <li><a href="mail.html" class="hvr-underline-from-left">#{{ $category->name }}</a></li>
-                                        @endforeach
                                 </ul>
                                 <br>
                                 <h4 style="margin: 5px">ПОПУЛЯРНЫЕ ЗАПИСИ И СТРАНИЦЫ</h4><hr>
-                                <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav" style="display: flex;">
                                     @foreach($articles as $article)
                                         <li>
-                                            <a href="mail.html" class="hvr-underline-from-left">
-                                                <div class="content">
-                                                    <img src="/image/{{ $article->image }}" class="img img-responsive"> #{{ $article->title }}
+                                            <a href="mail.html" class="hvr-underline-from-left" style="display: flex;">
+                                                <div class="content2">
+                                                    <img src="/image/{{ $article->image }}" class="img img-responsive">
+                                                </div>
+                                                <div class="content1">
+                                                    #{{ $article->title }}
                                                 </div>
 
                                             </a>
@@ -96,12 +92,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <br>
                                 <h4 style="margin: 5px">НЕДАВНИЕ КОММЕНТАРИИ</h4><hr>
                                 <ul class="nav navbar-nav">
-                                    @foreach($articles as $article)
+                                    @foreach($comments as $comment)
                                         <li>
                                             <a href="mail.html" class="hvr-underline-from-left">
 
                                                 <div class="col-xs-8">
-                                                    #{{ $article->title }}
+                                                    #{{ $comment->name }}
                                                 </div>
                                             </a>
                                         </li>
@@ -145,24 +141,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
 </div>
-<!-- //banner-body -->
-<script src="/bootstrap/js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
+<script src="/boot/js/bootstrap.js"></script>
 <script>
     $(window).bind('scroll', function () {
         var a = document.getElementsByClassName('navbar-default');
-
-        if ($(window).scrollTop() > a[0].clientHeight - 400) {
-            $('#my_row').addClass('fixed');
-            $('#social').addClass('social');
-            $('#my_id').addClass('col-md-offset-4').removeClass('col-md-offset-1');
-        } else {
-            $('#my_row').removeClass('fixed');
-            $('#social').removeClass('social');
-            $('#my_id').removeClass('col-md-offset-4').addClass('col-md-offset-1');
+        var b = document.getElementById('my_id');
+        if (b.clientHeight > a[0].clientHeight) {
+            if ($(window).scrollTop() > a[0].clientHeight - 400) {
+                $('#my_row').addClass('fixed');
+                $('#social').addClass('social');
+                $('#my_id').addClass('col-md-offset-4').removeClass('col-md-offset-1');
+            } else {
+                $('#my_row').removeClass('fixed');
+                $('#social').removeClass('social');
+                $('#my_id').removeClass('col-md-offset-4').addClass('col-md-offset-1');
+            }
         }
     });
-
 </script>
 </body>
 </html>

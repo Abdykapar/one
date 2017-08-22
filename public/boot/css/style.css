@@ -26,6 +26,10 @@ body a:hover{
 .banner-body{
 	background:url(../images/banner.png) 0px 0px;
 	padding:0 0;
+	display: flex;
+}
+img {
+    max-width: 600px;
 }
 .banner-body-content {
     padding: 4em 3em;
@@ -946,7 +950,7 @@ figure.effect-winston:hover figcaption::before {
 	}
 .leave-comment textarea{
 	resize:none;
-	min-height:200px;
+	min-height:100px;
 	margin:1em 0;
 	}
 .leave-comment input[type="submit"] {

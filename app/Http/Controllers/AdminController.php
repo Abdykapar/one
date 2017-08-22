@@ -9,6 +9,7 @@ use Faker\Provider\cs_CZ\DateTime;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
 use MongoDB\BSON\Timestamp;
 
 class AdminController extends Controller
@@ -36,5 +37,12 @@ class AdminController extends Controller
     public function deleteComment($id){
         Comment::destroy($id);
         return redirect(route('admin.comment'));
+    }
+    public function password(){
+        return view('admin/password');
+    }
+    public function change(Request $request){
+        Auth::user()->password = bcrypt($request['new_password']);
+        return redirect(route('admin.index'));
     }
 }

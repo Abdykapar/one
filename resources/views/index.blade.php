@@ -3,9 +3,7 @@
 @section('content')
         <div class="thumbnail">
             <img src="/image/{{ $article->image }}" class="img img-responsive">
-            <div class="caption">{!! $article->content  !!}
-
-            </div>
+            <div class="caption">{!! $article->content  !!}</div>
             <div class="footer" style="padding-bottom: 20px">
 
                 <div class="row" style="margin: 10px;padding: 0;">
@@ -21,15 +19,30 @@
                 </div>
             </div>
         </div>
+        @if ($article->comments != null)
+
+            @foreach($article->comments as $comment)
+                <div class="thumbnail">
+                <div class="caption">
+                    {{ $comment->content }}
+                </div>
+                    <div class="footer" style="margin: 10px">
+                        <b>{{ $comment->name }}</b> <i style="float: right">{{ $comment->created_at }}</i>
+                    </div>
+                </div>
+            @endforeach
+
+        @endif
         <div class="single">
         <div class="leave-comment" id="comment">
-            <h4>Leave your comment</h4>
-            <p>Suspendisse tempor tellus sed nisl semper, quis condimentum turpis pharetra.</p>
-            <form>
-                <input id="name" type="text" placeholder="Name" required=" ">
-                <input type="text" placeholder="Email" required=" ">
-                <input type="text" placeholder="Your Website" required=" ">
-                <textarea placeholder="Message" required=" "></textarea>
+            <h4>Добавить комментарий</h4>
+            <br>
+            <form method="post" action="{{ route('comment',$article->id) }}">
+                {{ csrf_field() }}
+                <input id="name" type="text" name="name" placeholder="Name" required=" ">
+                <input type="text" placeholder="Email" name="email" required=" ">
+                <input type="hidden" name="article_id" value="{{ $article->id }}">
+                <textarea placeholder="Message" name="content" required=" "></textarea>
                 <input type="submit" value="Submit">
                 <div class="clearfix"> </div>
             </form>

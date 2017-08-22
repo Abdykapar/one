@@ -1,0 +1,15 @@
+.row{
+    display: flex;
+
+}
+.left-menu{
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+}
+.content{
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+
+}

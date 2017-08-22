@@ -13,13 +13,23 @@
 
 Route::get('/',['as'=>'home','uses'=>'HomeController@index']);
 Route::auth();
-
+Route::get('test1',function (){
+   return view('test1');
+});
+Route::get('index',function (){
+    $articles = \App\Article::all();
+    $categories = \App\Category::all();
+   return view('test',compact('articles','categories'));
+});
 Route::get('/home', 'HomeController@index');
 Route::get('/single/{id}', 'HomeController@single');
+Route::post('/single/{id}', ['as'=>'comment','uses'=>'HomeController@comment']);
 //admin
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function (){
    Route::get('/',['as'=>'admin.index','uses'=>'AdminController@index']);
-    //Category 
+   Route::get('/password',['as'=>'admin.password','uses'=>'AdminController@password']);
+   Route::post('/password',['as'=>'admin.change','uses'=>'AdminController@change']);
+    //Category
     Route::get('/category',['as'=>'admin.category','uses'=>'AdminController@category']);
    Route::get('/category/create',['as'=>'admin.category.create','uses'=>'CategoryController@create']);
    Route::get('/category/{id}/edit',['as'=>'admin.category.edit','uses'=>'CategoryController@edit']);
