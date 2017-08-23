@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/single/{id}', 'HomeController@single');
 Route::post('/single/{id}', ['as'=>'comment','uses'=>'HomeController@comment']);
 //admin
-Route::group(['prefix'=>'admin','middleware'=>'auth'],function (){
+Route::group(['prefix'=>'admin',['middleware'=>'auth','admin']],function (){
    Route::get('/',['as'=>'admin.index','uses'=>'AdminController@index']);
    Route::get('/password',['as'=>'admin.password','uses'=>'AdminController@password']);
    Route::post('/password',['as'=>'admin.change','uses'=>'AdminController@change']);

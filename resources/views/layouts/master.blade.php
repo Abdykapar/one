@@ -29,15 +29,6 @@
         .social{
             float: left;
         }
-        .content2{
-            display: flex;
-            flex: 1 1 auto;
-            margin: 10px;
-        }
-        .content1 {
-            display: flex;
-            flex: 2 1 auto;
-        }
     </style>
 </head>
 <body>
