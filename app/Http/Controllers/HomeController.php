@@ -45,4 +45,11 @@ class HomeController extends Controller
         Comment::create($request->all());
         return back();
     }
+    public function about(){
+        return view('about')->with('articles',$this->articles)->with('comments',$this->comments)->with('categories',$this->categories);
+    }
+    public function category($id){
+        $category = Category::find($id);
+        return view('category',compact('category'))->with('articles',$this->articles)->with('comments',$this->comments)->with('categories',$this->categories);
+    }
 }

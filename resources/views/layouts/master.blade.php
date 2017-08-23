@@ -60,7 +60,7 @@
                             <nav class="stroke">
                                 <ul class="nav navbar-nav">
                                     @foreach($categories as $category)
-                                        <li><a href="mail.html" class="hvr-underline-from-left">#{{ $category->name }}</a></li>
+                                        <li><a href="{{ route('category',$category->id) }}" class="hvr-underline-from-left">#{{ $category->name }}</a></li>
                                     @endforeach
                                 </ul>
                                 <br>
@@ -68,7 +68,7 @@
                                 <ul class="nav navbar-nav" style="display: flex;">
                                     @foreach($articles as $article)
                                         <li>
-                                            <a href="mail.html" class="hvr-underline-from-left" style="display: flex;">
+                                            <a href="{{ url('single',$article->id) }}" class="hvr-underline-from-left" style="display: flex;">
                                                 <div class="content2">
                                                     <img src="/image/{{ $article->image }}" class="img img-responsive">
                                                 </div>
@@ -85,7 +85,7 @@
                                 <ul class="nav navbar-nav">
                                     @foreach($comments as $comment)
                                         <li>
-                                            <a href="mail.html" class="hvr-underline-from-left">
+                                            <a href="{{ url('single',$comment->article->id) }}" class="hvr-underline-from-left">
 
                                                 <div class="col-xs-8">
                                                     #{{ $comment->name }}
@@ -113,7 +113,7 @@
                                 <h4 style="margin: 5px">МЕНЮ</h4><hr>
                                 <ul class="nav navbar-nav" style="position: inherit">
                                     <li>
-                                        <a href="mail.html" class="hvr-underline-from-left">
+                                        <a href="{{ route('about') }}" class="hvr-underline-from-left">
                                             О нас
                                         </a>
                                     </li>

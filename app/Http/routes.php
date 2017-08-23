@@ -24,6 +24,9 @@ Route::get('index',function (){
 Route::get('/home', 'HomeController@index');
 Route::get('/single/{id}', 'HomeController@single');
 Route::post('/single/{id}', ['as'=>'comment','uses'=>'HomeController@comment']);
+Route::get('/about', ['as'=>'about','uses'=>'HomeController@about']);
+Route::get('/category/{id}',['as'=>'category','uses'=>'HomeController@category']);
+
 //admin
 Route::group(['prefix'=>'admin',['middleware'=>'auth','admin']],function (){
    Route::get('/',['as'=>'admin.index','uses'=>'AdminController@index']);
