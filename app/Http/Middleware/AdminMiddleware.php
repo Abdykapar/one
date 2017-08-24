@@ -14,13 +14,21 @@ class AdminMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::user()->admin == 1){
+        if (Auth::guard($guard)->guest()) {
+            if ($request->ajax() || $request->wantsJson()) {
+                return response('Unauthorized.', 401);
+            }
+
+            return redirect()->guest('login');
+        }
+        elseif (Auth::user()->admin){
             return $next($request);
         }
-        else {
+        else{
             return back();
         }
+
     }
 }

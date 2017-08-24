@@ -239,7 +239,15 @@ i.envelope,.navbar-default .navbar-nav > li > a:hover i.envelope1{
 	border:1px solid;
 	transition:.5s ease-in;
 	-webkit-transition:.5s ease-in;
-	-moz-transition:.5s ease-in;
+	-moz-transition:.5s ease-in;.fixed{
+    position: fixed;
+    bottom: 10px;
+    margin-bottom: 20px;
+    float: left;
+}
+.social{
+    float: left;
+}
 	-o-transition:.5s ease-in;
 	-ms-transition:.5s ease-in;
 }
@@ -492,7 +500,7 @@ ul.wmuSliderPagination {
 	line-height:1.8em;
 }
 .footer-right{
-	float:right;
+	float:left;
 }
 .social-nav li{
 	display:inline-block;

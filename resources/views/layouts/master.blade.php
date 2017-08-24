@@ -17,17 +17,16 @@
     <link href='//fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
     <style>
-        .fixed{
-            position: fixed;
-            bottom: 10px;
-            margin-bottom: 20px;
-            float: left;
-        }
-        .img{
-            height: 30px;
-        }
-        .social{
-            float: left;
+        @media(min-width: 990px){
+            .fixed{
+                position: fixed;
+                bottom: 10px;
+                margin-bottom: 20px;
+                float: left;
+            }
+            .social{
+                float: left;
+            }
         }
     </style>
 </head>
@@ -35,7 +34,7 @@
 <div class="banner-body">
     <div class="container">
         <div class="banner-body-content">
-            <div class="col-md-3 col-sm-3 col-xs-3 banner-body-left" id="my_row">
+            <div class="col-md-3 col-xs-3 banner-body-left" id="my_row">
                 <div class="row">
                     <div class="logo">
                         <h1>
@@ -55,7 +54,7 @@
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse nav-wil" id="menu-r" >
+                        <div class="collapse navbar-collapse nav-wil" id="menu-r" style="position: relative">
                             <h4 style="margin: 5px;">НАШИ ПРОЕКТЫ:</h4><hr>
                             <nav class="stroke">
                                 <ul class="nav navbar-nav">
@@ -65,17 +64,16 @@
                                 </ul>
                                 <br>
                                 <h4 style="margin: 5px">ПОПУЛЯРНЫЕ ЗАПИСИ И СТРАНИЦЫ</h4><hr>
-                                <ul class="nav navbar-nav" style="display: flex;">
-                                    @foreach($articles as $article)
+                                <ul class="nav navbar-nav">
+                                    @foreach($articles->take(5) as $article)
                                         <li>
-                                            <a href="{{ url('single',$article->id) }}" class="hvr-underline-from-left" style="display: flex;">
-                                                <div class="content2">
+                                            <a href="{{ url('single',$article->id) }}" class="hvr-underline-from-left" style="display: flex;max-height: 60px">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
                                                     <img src="/image/{{ $article->image }}" class="img img-responsive">
                                                 </div>
-                                                <div class="content1">
-                                                    #{{ $article->title }}
+                                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                                    {{ $article->title }}
                                                 </div>
-
                                             </a>
                                         </li>
                                     @endforeach
@@ -83,12 +81,11 @@
                                 <br>
                                 <h4 style="margin: 5px">НЕДАВНИЕ КОММЕНТАРИИ</h4><hr>
                                 <ul class="nav navbar-nav">
-                                    @foreach($comments as $comment)
+                                    @foreach($comments->take(5) as $comment)
                                         <li>
                                             <a href="{{ url('single',$comment->article->id) }}" class="hvr-underline-from-left">
-
-                                                <div class="col-xs-8">
-                                                    #{{ $comment->name }}
+                                                <div class="">
+                                                    <span class="fa fa-user"></span> {{ $comment->name }} на "{{ $comment->article->title }}"
                                                 </div>
                                             </a>
                                         </li>
@@ -96,7 +93,7 @@
                                 </ul>
                                 <br>
                                 <h4 style="margin: 5px" >СОЦИАЛЬНЫЕ СЕТИ</h4><hr>
-                                <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav" >
                                     <li  class="">
                                         <div id="social" class="footer-right" style="margin: 10px 0">
                                             <ul class="social-nav model-3">
@@ -125,7 +122,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-8 col-md-offset-1 col-sm-9 col-xs-9 banner-body-right" id="my_id">
+            <div class="col-md-8 col-md-offset-1  col-xs-9 banner-body-right" id="my_id">
                 @yield('content')
             </div>
             <div class="clearfix"> </div>

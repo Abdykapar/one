@@ -28,7 +28,7 @@ Route::get('/about', ['as'=>'about','uses'=>'HomeController@about']);
 Route::get('/category/{id}',['as'=>'category','uses'=>'HomeController@category']);
 
 //admin
-Route::group(['prefix'=>'admin',['middleware'=>'auth','admin']],function (){
+Route::group(['prefix'=>'admin','middleware'=>'admin'],function (){
    Route::get('/',['as'=>'admin.index','uses'=>'AdminController@index']);
    Route::get('/password',['as'=>'admin.password','uses'=>'AdminController@password']);
    Route::post('/password',['as'=>'admin.change','uses'=>'AdminController@change']);

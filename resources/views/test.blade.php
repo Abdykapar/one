@@ -2,9 +2,9 @@
 
 @section('content')
     @foreach($articles as $article)
-        <div class="thumbnail">
+        <div class="thumbnail" style="padding: 20px;">
             <img src="/image/{{ $article->image }}" class="img img-responsive">
-            <div class="caption">{!! str_limit($article->content,500)  !!}
+            <div class="caption">{!! str_limit($article->content,300)  !!}
                 <a href="/single/{{ $article->id }}"><u>Читать далее</u></a>
             </div>
             <div class="footer" style="padding-bottom: 20px">

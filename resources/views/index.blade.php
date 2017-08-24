@@ -1,9 +1,16 @@
 @extends('layouts.master')
 
 @section('content')
-        <div class="thumbnail">
+        <div class="thumbnail" style="padding: 20px">
             <img src="/image/{{ $article->image }}" class="img img-responsive">
-            <div class="caption">{!! $article->content  !!}</div>
+
+            <div class="caption">
+                <center>
+                <h1>{{ $article->title }}</h1>
+                </center>
+                <br>
+                {!! $article->content  !!}
+            </div>
             <div class="footer" style="padding-bottom: 20px">
 
                 <div class="row" style="margin: 10px;padding: 0;">

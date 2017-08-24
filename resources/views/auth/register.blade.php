@@ -71,6 +71,9 @@
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-user"></i> Register
                                 </button>
+                                <a href="/login" class="btn btn-success">
+                                    <i class="fa fa-btn fa-sign-in"></i> Login
+                                </a>
                             </div>
                         </div>
                     </form>

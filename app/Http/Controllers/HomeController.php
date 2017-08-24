@@ -22,7 +22,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('web');
-        $this->articles = Article::all();
+        $this->articles = Article::all()->sortByDesc('created_at');
         $this->categories = Category::all();
         $this->comments = Comment::all();
     }
