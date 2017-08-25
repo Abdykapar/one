@@ -55,4 +55,7 @@
             </form>
         </div>
         </div>
+        <script>
+            document.getElementById('comment').scrollIntoView();
+        </script>
 @endsection

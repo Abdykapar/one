@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Aikyn admin</title>
-
+    <link rel="shortcut icon" href="/logo/logo_title.png" />
     <!-- Bootstrap Core CSS -->
     <link href="/files/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 

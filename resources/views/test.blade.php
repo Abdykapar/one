@@ -23,7 +23,7 @@
                         <i class="fa fa-user"></i> {{ $article->category->name }}
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <a href="{{ route('single',$article->id) }}#name">
+                        <a href={{ route('single',$article->id) }}#name>
                             <i class="fa fa-comment"></i> Leave a comment
                         </a>
                     </div>
