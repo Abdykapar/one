@@ -46,6 +46,10 @@
                                     <input type="file" name="image" value="{{ $article->image }}" >
                                 </div>
                                 <div class="form-group">
+                                    <label>Краткое описание</label>
+                                    <textarea name="sub_text" class="form-control">{{ $article->sub_text }}</textarea>
+                                </div>
+                                <div class="form-group">
                                     <label>Описание</label>
                                     @include('layouts.main',['article'=>$article->content])
                                 </div>

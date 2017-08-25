@@ -8,7 +8,7 @@ class Article extends Model
 {
     public $table = 'articles';
 
-    protected $fillable = ['title','content','user_id','category_id','image'];
+    protected $fillable = ['title','content','user_id','category_id','image','sub_text'];
 
     public function user(){
         return $this->belongsTo('App\User','user_id');

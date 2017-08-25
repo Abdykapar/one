@@ -42,6 +42,10 @@
                                     <input type="file" name="image" required>
                                 </div>
                                 <div class="form-group">
+                                    <label>Краткое описание</label>
+                                    <textarea name="sub_text" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
                                     <label>Описание</label>
                                     @include('layouts.main')
                                 </div>
