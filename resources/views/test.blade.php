@@ -7,7 +7,7 @@
             <center>
             <h1 style="margin: 20px;">{{ $article->title }}</h1>
             </center>
-            <div class="caption"><i>{{ $article->sub_text }}</i>
+            <div class="caption"><i>{!! str_limit($article->content,300) !!}</i>
                 <a href="/single/{{ $article->id }}"><u>Читать далее</u></a>
             </div>
             <div class="footer" style="padding-bottom: 20px">
