@@ -4,6 +4,9 @@
     @foreach($articles as $article)
         <div class="thumbnail" style="padding: 20px;">
             <img src="/image/{{ $article->image }}" class="img img-responsive">
+            <center>
+            <h1 style="margin: 20px;">{{ $article->title }}</h1>
+            </center>
             <div class="caption">{!! str_limit($article->content,300)  !!}
                 <a href="/single/{{ $article->id }}"><u>Читать далее</u></a>
             </div>
@@ -20,7 +23,7 @@
                         <i class="fa fa-user"></i> {{ $article->category->name }}
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <a href="/single/{{ $article->id }}#name">
+                        <a href="{{ route('single',$article->id) }}#name">
                             <i class="fa fa-comment"></i> Leave a comment
                         </a>
                     </div>

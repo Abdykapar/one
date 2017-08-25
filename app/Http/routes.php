@@ -22,13 +22,13 @@ Route::get('index',function (){
    return view('test',compact('articles','categories'));
 });
 Route::get('/home', 'HomeController@index');
-Route::get('/single/{id}', 'HomeController@single');
+Route::get('/single/{id}', ['as'=>'single','uses'=>'HomeController@single']);
 Route::post('/single/{id}', ['as'=>'comment','uses'=>'HomeController@comment']);
 Route::get('/about', ['as'=>'about','uses'=>'HomeController@about']);
 Route::get('/category/{id}',['as'=>'category','uses'=>'HomeController@category']);
 
 //admin
-Route::group(['prefix'=>'admin','middleware'=>'admin'],function (){
+Route::group(['prefix'=>'admin','middleware'=>'auth'],function (){
    Route::get('/',['as'=>'admin.index','uses'=>'AdminController@index']);
    Route::get('/password',['as'=>'admin.password','uses'=>'AdminController@password']);
    Route::post('/password',['as'=>'admin.change','uses'=>'AdminController@change']);
