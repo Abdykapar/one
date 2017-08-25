@@ -29,7 +29,7 @@ class ArticleController extends Controller
                 'user_id' => Auth::user()->id,
                 'category_id' => $request['category_id'],
                 'image' => $randomName,
-//                'sub_text' =>$request['sub_text']
+                'sub_text' =>$request['sub_text']
         ]);
         }
         else {
@@ -56,7 +56,7 @@ class ArticleController extends Controller
                 'content' => $request['content'],
                 'category_id' => $request['category_id'],
                 'image' => $randomName,
-//                'sub_text' => $request['sub_text']
+                'sub_text' => $request['sub_text']
             ]);
         }
         else{
